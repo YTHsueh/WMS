@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  serial: MyString
+  date: 2015-11-22
+  operator: MyString
+  note: MyText
+
+two:
+  serial: MyString
+  date: 2015-11-22
+  operator: MyString
+  note: MyText

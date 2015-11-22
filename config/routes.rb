@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root 'index#index'
+
+  devise_for :users
+  resources :feeds
   resources :lists
   resources :slots
   resources :projects

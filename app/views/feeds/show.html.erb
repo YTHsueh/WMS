@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Serial:</strong>
+  <%= @feed.serial %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @feed.date %>
+</p>
+
+<p>
+  <strong>Operator:</strong>
+  <%= @feed.operator %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @feed.note %>
+</p>
+
+<%= link_to 'Edit', edit_feed_path(@feed) %> |
+<%= link_to 'Back', feeds_path %>
