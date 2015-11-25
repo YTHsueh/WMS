@@ -4,6 +4,7 @@
 <%= link_to '新增庫位', new_slot_path, class: 'btn btn-primary' %>
 </h1>
 
+<%= paginate @slots, theme:'twitter-bootstrap-3' %>
 <table class="table">
   <thead>
     <tr>

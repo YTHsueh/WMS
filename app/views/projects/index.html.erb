@@ -4,6 +4,7 @@
 <%= link_to '新增專案', new_project_path, class: 'btn btn-primary' %>
 </h1>
 
+<%= paginate @projects, theme:'twitter-bootstrap-3' %>
 <table class="table">
   <thead>
     <tr>

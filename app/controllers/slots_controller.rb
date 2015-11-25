@@ -4,7 +4,7 @@ class SlotsController < ApplicationController
   # GET /slots
   # GET /slots.json
   def index
-    @slots = Slot.all
+    @slots = Slot.page(params[:page]).per(10)
   end
 
   # GET /slots/1
