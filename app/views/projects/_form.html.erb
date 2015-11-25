@@ -2,12 +2,12 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :serial %>
-    <%= f.input :status %>
+    <%= f.input :name, label: '專案名稱', required: true %>
+    <%= f.input :serial, label: '專案編號', required: true %>
+    <%= f.input :status, label: '專案狀態', required: true %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, "確認" %>
   </div>
 <% end %>

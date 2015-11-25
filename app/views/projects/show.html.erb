@@ -1,19 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>專案名稱：</strong>
   <%= @project.name %>
 </p>
 
 <p>
-  <strong>Serial:</strong>
+  <strong>專案編號：</strong>
   <%= @project.serial %>
 </p>
 
 <p>
-  <strong>Status:</strong>
+  <strong>專案狀態：</strong>
   <%= @project.status %>
 </p>
 
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<%= link_to '編輯', edit_project_path(@project) %> |
+<%= link_to '返回', projects_path %>
