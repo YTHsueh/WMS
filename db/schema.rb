@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151122091701) do
+ActiveRecord::Schema.define(version: 20151125073147) do
 
   create_table "feeds", force: :cascade do |t|
     t.string   "serial"
@@ -27,6 +27,34 @@ ActiveRecord::Schema.define(version: 20151122091701) do
     t.string   "serial"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "materials", force: :cascade do |t|
+    t.string   "cat1"
+    t.string   "cat2"
+    t.string   "cat3"
+    t.string   "cat4"
+    t.string   "num_sup"
+    t.string   "serial"
+    t.string   "name"
+    t.string   "spec"
+    t.string   "unit"
+    t.string   "supplier"
+    t.string   "replenish_policy"
+    t.string   "replenish_period"
+    t.text     "description"
+    t.float    "weight"
+    t.string   "weight_unit"
+    t.text     "memo"
+    t.string   "num_material_drawing"
+    t.string   "min_stock"
+    t.string   "pick_unit"
+    t.float    "length"
+    t.float    "width"
+    t.float    "height"
+    t.string   "lead_time"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
   create_table "projects", force: :cascade do |t|

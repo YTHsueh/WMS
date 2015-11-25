@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cat1: MyString
+  cat2: MyString
+  cat3: MyString
+  cat4: MyString
+  num_sup: MyString
+  serial: MyString
+  name: MyString
+  spec: MyString
+  unit: MyString
+  supplier: MyString
+  replenish_policy: MyString
+  replenish_period: MyString
+  description: MyText
+  weight: 1.5
+  weight_unit: MyString
+  memo: MyText
+  num_material_drawing: MyString
+  min_stock: MyString
+  pick_unit: MyString
+  length: 1.5
+  width: 1.5
+  height: 1.5
+  lead_time: MyString
+
+two:
+  cat1: MyString
+  cat2: MyString
+  cat3: MyString
+  cat4: MyString
+  num_sup: MyString
+  serial: MyString
+  name: MyString
+  spec: MyString
+  unit: MyString
+  supplier: MyString
+  replenish_policy: MyString
+  replenish_period: MyString
+  description: MyText
+  weight: 1.5
+  weight_unit: MyString
+  memo: MyText
+  num_material_drawing: MyString
+  min_stock: MyString
+  pick_unit: MyString
+  length: 1.5
+  width: 1.5
+  height: 1.5
+  lead_time: MyString

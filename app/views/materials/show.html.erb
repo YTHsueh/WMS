@@ -1,0 +1,119 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>類別一：</strong>
+  <%= @material.cat1 %>
+</p>
+
+<p>
+  <strong>類別二：</strong>
+  <%= @material.cat2 %>
+</p>
+
+<p>
+  <strong>類別三：</strong>
+  <%= @material.cat3 %>
+</p>
+
+<p>
+  <strong>類別四：</strong>
+  <%= @material.cat4 %>
+</p>
+
+<p>
+  <strong>供應商貨號：</strong>
+  <%= @material.num_sup %>
+</p>
+
+<p>
+  <strong>材料編號：</strong>
+  <%= @material.serial %>
+</p>
+
+<p>
+  <strong>材料名稱：</strong>
+  <%= @material.name %>
+</p>
+
+<p>
+  <strong>規格：</strong>
+  <%= @material.spec %>
+</p>
+
+<p>
+  <strong>單位：</strong>
+  <%= @material.unit %>
+</p>
+
+<p>
+  <strong>主供應商：</strong>
+  <%= @material.supplier %>
+</p>
+
+<p>
+  <strong>補貨政策：</strong>
+  <%= @material.replenish_policy %>
+</p>
+
+<p>
+  <strong>補貨週期：</strong>
+  <%= @material.replenish_period %>
+</p>
+
+<p>
+  <strong>描述：</strong>
+  <%= @material.description %>
+</p>
+
+<p>
+  <strong>重量(kg)：</strong>
+  <%= @material.weight %>
+</p>
+
+<p>
+  <strong>重量單位：</strong>
+  <%= @material.weight_unit %>
+</p>
+
+<p>
+  <strong>備註：</strong>
+  <%= @material.memo %>
+</p>
+
+<p>
+  <strong>材料圖號：</strong>
+  <%= @material.num_material_drawing %>
+</p>
+
+<p>
+  <strong>最低補量：</strong>
+  <%= @material.min_stock %>
+</p>
+
+<p>
+  <strong>領用倍量：</strong>
+  <%= @material.pick_unit %>
+</p>
+
+<p>
+  <strong>長(cm)：</strong>
+  <%= @material.length %>
+</p>
+
+<p>
+  <strong>寬(cm)：</strong>
+  <%= @material.width %>
+</p>
+
+<p>
+  <strong>高(cm)：</strong>
+  <%= @material.height %>
+</p>
+
+<p>
+  <strong>備貨時間：</strong>
+  <%= @material.lead_time %>
+</p>
+
+<%= link_to '編輯', edit_material_path(@material) %> |
+<%= link_to '返回', materials_path %>
