@@ -1,13 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Slots</h1>
+<h1>庫位列表
+<%= link_to '新增庫位', new_slot_path, class: 'btn btn-primary' %>
+</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Serial</th>
-      <th>Position</th>
+      <th>庫位名稱</th>
+      <th>庫位編號</th>
+      <th>庫位位置</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,9 +20,9 @@
         <td><%= slot.name %></td>
         <td><%= slot.serial %></td>
         <td><%= slot.position %></td>
-        <td><%= link_to 'Show', slot %></td>
-        <td><%= link_to 'Edit', edit_slot_path(slot) %></td>
-        <td><%= link_to 'Destroy', slot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '顯示', slot %></td>
+        <td><%= link_to '編輯', edit_slot_path(slot) %></td>
+        <td><%= link_to '刪除', slot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +30,3 @@
 
 <br>
 
-<%= link_to 'New Slot', new_slot_path %>
