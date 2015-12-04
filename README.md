@@ -1,6 +1,4 @@
-just an empty Rails App project
-
-contact: eddie@5xruby.tw
+Welltek WMS system 
 
 ## Version
 Rails 4.2.3
