@@ -22,8 +22,6 @@
         <td><%= slot.serial %></td>
         <td><%= slot.position %></td>
         <td><%= link_to '顯示', slot %></td>
-        <td><%= link_to '編輯', edit_slot_path(slot) %></td>
-        <td><%= link_to '刪除', slot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

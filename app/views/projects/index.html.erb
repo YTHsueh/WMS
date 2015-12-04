@@ -22,8 +22,6 @@
         <td><%= project.serial %></td>
         <td><%= project.status %></td>
         <td><%= link_to '顯示', project %></td>
-        <td><%= link_to '編輯', edit_project_path(project) %></td>
-        <td><%= link_to '刪除', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

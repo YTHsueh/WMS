@@ -28,8 +28,6 @@
         <td><%= material.lead_time %></td>
         <td><%= material.description %></td>
         <td><%= link_to '顯示', material %></td>
-        <td><%= link_to '編輯', edit_material_path(material) %></td>
-        <td><%= link_to '刪除', material, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
