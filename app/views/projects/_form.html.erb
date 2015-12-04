@@ -6,6 +6,17 @@
     <%= f.input :serial, label: '專案編號', required: true %>
     <%= f.input :status, label: '專案狀態', required: true %>
   </div>
+  <% if @project.requirements.any? %>
+    <%= f.simple_fields_for :requirements do |requirement| %> 
+      <%= render 'requirement_fields', f: requirement %> 
+    <% end %> 
+  <% end %> 
+
+  <div class="links">
+    <%= link_to_add_association '新增材料', f, :requirements, class:'btn btn-info' %>
+  </div>
+
+  <br>
 
   <div class="form-actions">
     <%= f.button :submit, "確認" %>
