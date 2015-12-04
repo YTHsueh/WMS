@@ -15,5 +15,14 @@
   <%= @project.status %>
 </p>
 
+<p> 
+<strong>專案狀態變更：</strong>
+<% @project.versions.each do |project| %>
+  <li> 
+  <%= project.event %>  <%= project.reify.status %> | <%= project.reify.updated_at %>
+  </li> 
+<% end %>  
+</p>
+
 <%= link_to '編輯', edit_project_path(@project) %> |
 <%= link_to '返回', projects_path %>
