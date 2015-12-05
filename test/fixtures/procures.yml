@@ -2,12 +2,10 @@
 
 one:
   serial: MyString
-  date: 2015-11-22
-  operator: MyString
+  date: 2015-12-05
   note: MyText
 
 two:
   serial: MyString
-  date: 2015-11-22
-  operator: MyString
+  date: 2015-12-05
   note: MyText

@@ -1,9 +1,8 @@
-class CreateFeeds < ActiveRecord::Migration
+class CreateProcures < ActiveRecord::Migration
   def change
-    create_table :feeds do |t|
+    create_table :procures do |t|
       t.string :serial
       t.date :date
-      t.string :operator
       t.text :note
 
       t.timestamps null: false
