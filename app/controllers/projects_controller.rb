@@ -15,12 +15,12 @@ class ProjectsController < ApplicationController
   # GET /projects/new
   def new
     @project = Project.new
-    @project.requirements.build 
+# 20151205 fix default add empty material 
+#    @project.requirements.build 
   end
 
   # GET /projects/1/edit
   def edit
-    @project.requirements.build 
   end
 
   # POST /projects

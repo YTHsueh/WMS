@@ -6,6 +6,7 @@
     <%= f.input :serial, label: '專案編號', required: true %>
     <%= f.input :status, label: '專案狀態', required: true %>
   </div>
+
   <% if @project.requirements.any? %>
     <%= f.simple_fields_for :requirements do |requirement| %> 
       <%= render 'requirement_fields', f: requirement %> 
