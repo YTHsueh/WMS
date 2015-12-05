@@ -8,8 +8,8 @@
 <table class="table">
   <thead>
     <tr>
-      <th>材料編號</th>
       <th>材料名稱</th>
+      <th>材料編號</th>
       <th>主供應商</th>
       <th>最低補量</th>
       <th>備貨時間</th>
@@ -21,13 +21,12 @@
   <tbody>
     <% @materials.each do |material| %>
       <tr>
+        <td><%= link_to material.name, material %></td>
         <td><%= material.serial %></td>
-        <td><%= material.name %></td>
         <td><%= material.supplier %></td>
         <td><%= material.min_stock %></td>
         <td><%= material.lead_time %></td>
         <td><%= material.description %></td>
-        <td><%= link_to '顯示', material %></td>
       </tr>
     <% end %>
   </tbody>

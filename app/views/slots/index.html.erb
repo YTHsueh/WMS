@@ -18,10 +18,9 @@
   <tbody>
     <% @slots.each do |slot| %>
       <tr>
-        <td><%= slot.name %></td>
+        <td><%= link_to slot.name, slot %></td>
         <td><%= slot.serial %></td>
         <td><%= slot.position %></td>
-        <td><%= link_to '顯示', slot %></td>
       </tr>
     <% end %>
   </tbody>
