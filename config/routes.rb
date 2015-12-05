@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :in_procures
   resources :materials
   resources :products
   resources :products
