@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  procure: MyString
+  date_procure: 2015-12-05
+  note: MyText
+
+two:
+  procure: MyString
+  date_procure: 2015-12-05
+  note: MyText

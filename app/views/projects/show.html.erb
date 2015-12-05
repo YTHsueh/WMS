@@ -30,8 +30,9 @@
   <% end %>
 </table>
 
-<p> 
-<strong>專案狀態變更：</strong>
+
+<div class="well well-sm"> 
+<strong>專案狀態變更</strong></br></br>
   <% @project.versions.each do |version| %>
     <table class="table">
       <tr>
@@ -41,7 +42,7 @@
       </tr>
     </table> 
   <% end %>
-</p>
+</div>
 
 <%= link_to '編輯', edit_project_path(@project) %> |
 <%= link_to '返回', projects_path %>

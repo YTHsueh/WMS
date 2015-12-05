@@ -1,0 +1,2 @@
+module InProcuresHelper
+end

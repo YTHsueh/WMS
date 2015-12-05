@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Procure:</strong>
+  <%= @in_procure.procure %>
+</p>
+
+<p>
+  <strong>Date procure:</strong>
+  <%= @in_procure.date_procure %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @in_procure.note %>
+</p>
+
+<%= link_to 'Edit', edit_in_procure_path(@in_procure) %> |
+<%= link_to 'Back', in_procures_path %>

@@ -1,0 +1,13 @@
+<%= simple_form_for(@in_procure) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :procure %>
+    <%= f.input :date_procure %>
+    <%= f.input :note %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
