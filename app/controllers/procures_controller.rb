@@ -79,6 +79,6 @@ class ProcuresController < ApplicationController
           :_destroy 
         ]
       ]
-      params.require(:procure).permit(:serial, :date, :note)
+      params.require(:procure).permit(safe_attributes)
     end
 end

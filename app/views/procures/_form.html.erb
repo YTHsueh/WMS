@@ -7,7 +7,7 @@
 
   <% if @procure.projects.any? %>
     <%= f.simple_fields_for :projects do |project| %> 
-      <%= f.input :name %> 
+      <%= render 'project_fields', f:project %> 
     <% end %> 
   <% end %> 
 

@@ -8,6 +8,9 @@ class Project < ActiveRecord::Base
   has_many :buys 
   has_many :procures, through: :buys   
 
+  has_many :serials 
+  has_many :materials, through: :serials 
+
 # modification history 
   has_paper_trail
 

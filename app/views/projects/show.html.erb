@@ -1,5 +1,5 @@
-<p id="notice"><%= notice %></p>
-
+<%= link_to '編輯', edit_project_path(@project) %> |
+<%= link_to '返回', projects_path %>
 <p>
   <strong>專案名稱：</strong>
   <%= @project.name %>
@@ -46,5 +46,3 @@
   <% end %>
 </div>
 
-<%= link_to '編輯', edit_project_path(@project) %> |
-<%= link_to '返回', projects_path %>
