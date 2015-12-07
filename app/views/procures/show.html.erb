@@ -1,19 +1,38 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Serial:</strong>
+  <strong>採購單號：</strong>
   <%= @procure.serial %>
 </p>
 
 <p>
-  <strong>Date:</strong>
+  <strong>進料日期：</strong>
   <%= @procure.date %>
 </p>
 
+<table class="table">
+  <thead> 
+    <tr>
+      <td>專案名稱</td>
+      <td>材料</td>
+      <td>序號</td>
+    </tr>
+  </thead>
+  <% if @procure.projects.any? %>
+    <% @procure.projects.each do |project| %>
+      <tr> 
+        <td><%= project.name %></td>
+        <td><%= project.name %></td>
+        <td><%= project.name %></td>
+      </tr>
+    <% end %>
+  <% end %> 
+</table>
+
 <p>
-  <strong>Note:</strong>
+  <strong>備註：</strong>
   <%= @procure.note %>
 </p>
 
-<%= link_to 'Edit', edit_procure_path(@procure) %> |
-<%= link_to 'Back', procures_path %>
+<%= link_to '編輯', edit_procure_path(@procure) %> |
+<%= link_to '返回', procures_path %>

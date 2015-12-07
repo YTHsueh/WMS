@@ -16,10 +16,12 @@
 </p>
 
 <table class="table">
-      <tr>
-        <td>材料</td>
-        <td>數量</td>
-      </tr>
+  <thead>
+    <tr>
+      <td>材料</td>
+      <td>數量</td>
+    </tr>
+  </thead> 
   <% if @project.requirements.any? %>
     <% @project.requirements.each do |requirement| %>
       <tr>

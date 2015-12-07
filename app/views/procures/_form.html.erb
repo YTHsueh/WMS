@@ -2,19 +2,19 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :serial %>
-    <%= f.input :date %>
+    <%= f.input :serial, label: '採購單號', required: true %>
+    <%= f.input :date, label:'日期', required: true %>
 
   <% if @procure.projects.any? %>
     <%= f.simple_fields_for :projects do |project| %> 
-      <%= render 'project_fields', f: project %> 
+      <%= f.input :name %> 
     <% end %> 
   <% end %> 
 
-    <%= f.input :note %>
+    <%= f.input :note, label: '備註' %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, "確認" %>
   </div>
 <% end %>

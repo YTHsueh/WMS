@@ -1,13 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Procures</h1>
+<h1>進料單
+<%= link_to '新增採購單', new_procure_path, class: 'btn btn-default' %>
+</h1>
+<%= paginate @procures, theme:'twitter-bootstrap-3' %>
 
-<table>
+<table class="table">
   <thead>
     <tr>
-      <th>Serial</th>
-      <th>Date</th>
-      <th>Note</th>
+      <th>採購單號</th>
+      <th>進料日期</th>
+      <th>備註</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,12 +18,9 @@
   <tbody>
     <% @procures.each do |procure| %>
       <tr>
-        <td><%= procure.serial %></td>
+        <td><%= link_to procure.serial, procure %></td>
         <td><%= procure.date %></td>
         <td><%= procure.note %></td>
-        <td><%= link_to 'Show', procure %></td>
-        <td><%= link_to 'Edit', edit_procure_path(procure) %></td>
-        <td><%= link_to 'Destroy', procure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,3 @@
 
 <br>
 
-<%= link_to 'New Procure', new_procure_path %>
