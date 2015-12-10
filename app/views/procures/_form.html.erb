@@ -5,11 +5,9 @@
     <%= f.input :serial, label: '採購單號', required: true %>
     <%= f.input :date, label:'日期', required: true %>
 
-  <% if @procure.projects.any? %>
-    <%= f.simple_fields_for :projects do |project| %> 
-      <%= render 'project_fields', f:project %> 
+    <%= f.simple_fields_for :buys do |buy| %> 
+      <%= render 'project_fields', f:buy %> 
     <% end %> 
-  <% end %> 
 
     <%= f.input :note, label: '備註' %>
   </div>

@@ -2,7 +2,7 @@ class Project < ActiveRecord::Base
 
 # requirements of the project 
   has_many :requirements 
-  accepts_nested_attributes_for :requirements
+  accepts_nested_attributes_for :requirements, reject_if: :all_blank, allow_destroy: :true 
 
 # 進料單，入庫單，出料單
   has_many :buys 

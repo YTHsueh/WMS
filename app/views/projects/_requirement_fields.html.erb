@@ -1,6 +1,6 @@
 <div class="nested-fields well">
   <h3>材料</h3>
-  <%= f.input :material, label: false, placeholder: '請填寫材料名稱' %>   
+  <%= f.input :material, label: false, placeholder: '請填寫材料名稱', :collection=> @material,include_blank: false %>   
   <%= f.input :quantity, label: false, placeholder: '數量' %>
   <%= link_to_remove_association '移除', f, class:'btn btn-danger btn-xs' %>
 </div>

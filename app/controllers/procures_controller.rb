@@ -15,6 +15,7 @@ class ProcuresController < ApplicationController
   # GET /procures/new
   def new
     @procure = Procure.new
+    @procure.projects.build 
   end
 
   # GET /procures/1/edit
@@ -73,8 +74,15 @@ class ProcuresController < ApplicationController
         :serial, 
         :date, 
         :note, 
+        buys_attributes: [
+          :project_id, 
+          :procure_id, 
+          :id, 
+          :_destroy 
+        ], 
         projects_attributes: [
           :name, 
+          :serial, 
           :id, 
           :_destroy 
         ]
