@@ -79,7 +79,14 @@ class ProjectsController < ApplicationController
           :material, 
           :quantity, 
           :id, 
-          :_destroy
+          :_destroy  
+        ],
+        procures_attributes: [
+          :serial, 
+          :date, 
+          :note, 
+          :id, 
+          :_destroy 
         ]
       ]
       params.require(:project).permit(safe_attributes)

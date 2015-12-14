@@ -1,5 +1,5 @@
-<p id="notice"><%= notice %></p>
-
+<%= link_to '編輯', edit_slot_path(@slot) %> |
+<%= link_to '返回', slots_path %>
 <p>
   <strong>庫位名稱：</strong>
   <%= @slot.name %>
@@ -15,5 +15,3 @@
   <%= @slot.position %>
 </p>
 
-<%= link_to '編輯', edit_slot_path(@slot) %> |
-<%= link_to '返回', slots_path %>

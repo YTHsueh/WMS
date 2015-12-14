@@ -1,3 +1,3 @@
 class Requirement < ActiveRecord::Base
-  belongs_to :machine 
+  belongs_to :project 
 end

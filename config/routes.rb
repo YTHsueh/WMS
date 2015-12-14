@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
-  resources :in_procures
+  resources :procures
   resources :materials
   resources :products
   resources :products
   root 'index#index'
 
   devise_for :users
-  resources :feeds
   resources :slots
   resources :projects
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,5 +1,5 @@
-<p id="notice"><%= notice %></p>
-
+<%= link_to '編輯', edit_material_path(@material) %> |
+<%= link_to '返回', materials_path %>
 <p>
   <strong>類別一：</strong>
   <%= @material.cat1 %>
@@ -115,5 +115,3 @@
   <%= @material.lead_time %>
 </p>
 
-<%= link_to '編輯', edit_material_path(@material) %> |
-<%= link_to '返回', materials_path %>

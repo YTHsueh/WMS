@@ -1,0 +1,18 @@
+<%= simple_form_for(@procure) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :serial, label: '採購單號', required: true %>
+    <%= f.input :date, label:'日期', required: true %>
+
+    <%= f.simple_fields_for :buys do |buy| %> 
+      <%= render 'project_fields', f:buy %> 
+    <% end %> 
+
+    <%= f.input :note, label: '備註' %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "確認" %>
+  </div>
+<% end %>
